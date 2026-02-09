@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="StateTest.cpp" />
     <ClCompile Include="Work.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -136,10 +137,15 @@
     <ClInclude Include="NoonState.h" />
     <ClInclude Include="RestState.h" />
     <ClInclude Include="State.h" />
+    <ClInclude Include="StateTest.h" />
     <ClInclude Include="Work.h" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="状态模式UML 2.png" />
     <Image Include="状态模式UML图.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.md" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -2,29 +2,31 @@
 
 #include "User.h"
 
-void ChatRoom::addUser(std::shared_ptr<User> ptrUser)
+void ChatRoom::addUser(std::weak_ptr<User> ptrUser)
 {
-	if (ptrUser)
+	std::shared_ptr<User> p = ptrUser.lock();
+	if (p)
 	{
-		if (m_mapUsers.find(ptrUser->getName()) == m_mapUsers.end())
+		if (m_mapUsers.find(p->getName()) == m_mapUsers.end())
 		{
-			std::cout << ptrUser->getName() << "加入群聊" << std::endl;
-			m_mapUsers[ptrUser->getName()] = ptrUser;
+			std::cout << p->getName() << "加入群聊" << std::endl;
+			m_mapUsers[p->getName()] = ptrUser;
 		}
 	}
 }
 
 void ChatRoom::sendMessage(string strMessage, string strName)
 {
-	//if (auto iter = m_mapUsers.find(strName); iter != m_mapUsers.end())
-	//{
-	//	iter->second->receive(strMessage);
-	//}
 	for (auto iter = m_mapUsers.begin(); iter != m_mapUsers.end(); ++iter)
 	{
-		if (iter->second->getName() != strName)
+		std::shared_ptr<User> p = iter->second.lock();
+		if (p != nullptr)
 		{
-			iter->second->receive(strMessage);
+			if (p->getName() != strName)
+			{
+				p->receive(strMessage);
+			}
 		}
+
 	}
 }

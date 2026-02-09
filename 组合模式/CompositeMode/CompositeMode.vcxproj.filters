@@ -32,6 +32,9 @@
     <ClInclude Include="Composite.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="第二个例子.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="组合模式UML图.png">

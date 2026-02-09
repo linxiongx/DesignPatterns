@@ -9,8 +9,8 @@ class ChatRoom : public ChatMediator
 public:
 	virtual void sendMessage(string strMessage, string strName);
 
-	virtual void addUser(std::shared_ptr<User> ptrUser);
+	virtual void addUser(std::weak_ptr<User> ptrUser);
 
 protected:
-	std::unordered_map<string, std::shared_ptr<User>> m_mapUsers;
+	std::unordered_map<string, std::weak_ptr<User>> m_mapUsers;
 };

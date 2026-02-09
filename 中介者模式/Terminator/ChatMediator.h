@@ -10,5 +10,5 @@ class ChatMediator
 public:
 	virtual ~ChatMediator() = default;
 	virtual void sendMessage(string strMessage, string strName) = 0;
-	virtual void addUser(std::shared_ptr<User> ptrUser) = 0;
+	virtual void addUser(std::weak_ptr<User> ptrUser) = 0;
 };

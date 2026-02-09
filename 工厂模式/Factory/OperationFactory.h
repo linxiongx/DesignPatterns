@@ -21,7 +21,7 @@ public:
 		case '-':
 			ptr = std::make_unique<OperationSub>();
 			break;
-		case '+*':
+		case '*':
 			ptr = std::make_unique<OperationMul>();
 			break;
 		case '/':

@@ -13,13 +13,19 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="另一个例子">
+      <UniqueIdentifier>{eb774df9-071e-4bb1-b333-b3cc1885e031}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Work.cpp">
-      <Filter>头文件</Filter>
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StateTest.cpp">
+      <Filter>另一个例子</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -41,10 +47,21 @@
     <ClInclude Include="RestState.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="StateTest.h">
+      <Filter>另一个例子</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="状态模式UML图.png">
       <Filter>资源文件</Filter>
     </Image>
+    <Image Include="状态模式UML 2.png">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.md">
+      <Filter>资源文件</Filter>
+    </None>
   </ItemGroup>
 </Project>
