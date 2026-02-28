@@ -1,0 +1,88 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/29.5.2 Chrome/142.0.7444.265 Electron/39.6.1 Safari/537.36" version="29.5.2">
+  <diagram name="第 1 页" id="n3dRbPq8m-bt8RC5USMT">
+    <mxGraphModel dx="1295" dy="868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="PEX5b0sY8_cTW1xDCv5e-5" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;Interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;RequestHandler&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;virtual void handle(const Request&amp;amp; req)&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="250" x="289" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="PEX5b0sY8_cTW1xDCv5e-6" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="CoreHandler" vertex="1">
+          <mxGeometry height="52" width="300" x="70" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="PEX5b0sY8_cTW1xDCv5e-9" parent="PEX5b0sY8_cTW1xDCv5e-6" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;virtual void handle(const Request&amp;amp; req)&amp;nbsp;&lt;/span&gt;«override»" vertex="1">
+          <mxGeometry height="26" width="300" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PEX5b0sY8_cTW1xDCv5e-11" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="HandlerDecorator" vertex="1">
+          <mxGeometry height="86" width="320" x="510" y="352" as="geometry" />
+        </mxCell>
+        <mxCell id="PEX5b0sY8_cTW1xDCv5e-12" parent="PEX5b0sY8_cTW1xDCv5e-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="# std::shared_ptr&amp;lt;RequestHandler&amp;gt; handler_" vertex="1">
+          <mxGeometry height="26" width="320" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="PEX5b0sY8_cTW1xDCv5e-13" parent="PEX5b0sY8_cTW1xDCv5e-11" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="320" y="52" as="geometry" />
+        </mxCell>
+        <mxCell id="PEX5b0sY8_cTW1xDCv5e-14" parent="PEX5b0sY8_cTW1xDCv5e-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+&amp;nbsp;&lt;span style=&quot;background-color: transparent;&quot;&gt;virtual void handle(const Request&amp;amp; req)&amp;nbsp;&lt;/span&gt;«override»" vertex="1">
+          <mxGeometry height="26" width="320" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="PEX5b0sY8_cTW1xDCv5e-15" edge="1" parent="1" source="PEX5b0sY8_cTW1xDCv5e-11" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;curved=0;" target="PEX5b0sY8_cTW1xDCv5e-5" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="670" y="320" />
+              <mxPoint x="414" y="320" />
+            </Array>
+            <mxPoint x="390" y="510" as="sourcePoint" />
+            <mxPoint x="635" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PEX5b0sY8_cTW1xDCv5e-21" edge="1" parent="1" source="PEX5b0sY8_cTW1xDCv5e-43" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;curved=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="PEX5b0sY8_cTW1xDCv5e-11" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="434.0000000000002" y="520" as="sourcePoint" />
+            <mxPoint x="440" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PEX5b0sY8_cTW1xDCv5e-34" edge="1" parent="1" source="PEX5b0sY8_cTW1xDCv5e-44" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;curved=0;" target="PEX5b0sY8_cTW1xDCv5e-11" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="705" y="520" as="sourcePoint" />
+            <mxPoint x="967" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PEX5b0sY8_cTW1xDCv5e-35" edge="1" parent="1" style="endArrow=block;endFill=0;endSize=12;html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;exitX=0.538;exitY=0.012;exitDx=0;exitDy=0;curved=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="1030" y="479" />
+              <mxPoint x="670" y="479" />
+            </Array>
+            <mxPoint x="1029.88" y="520.0799999999999" as="sourcePoint" />
+            <mxPoint x="670" y="437" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PEX5b0sY8_cTW1xDCv5e-37" edge="1" parent="1" source="PEX5b0sY8_cTW1xDCv5e-5" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;curved=0;" target="PEX5b0sY8_cTW1xDCv5e-11" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <mxPoint x="580" y="204.57999999999998" as="sourcePoint" />
+            <mxPoint x="740" y="204.57999999999998" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PEX5b0sY8_cTW1xDCv5e-43" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;AuthDecorator&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;nbsp;void validateLogin(const Request&amp;amp; req)&lt;/p&gt;" vertex="1">
+          <mxGeometry height="80" width="231" x="330" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="PEX5b0sY8_cTW1xDCv5e-44" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;RoleDecorator&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;nbsp;void validateRole(const Request&amp;amp; req)&lt;/p&gt;" vertex="1">
+          <mxGeometry height="80" width="231" x="589" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="PEX5b0sY8_cTW1xDCv5e-45" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;span style=&quot;font-weight: 700;&quot;&gt;LogDecorator&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field: Type&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;nbsp;void logRequestStart(const Request&amp;amp; req)&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&amp;nbsp;void logRequestEnd()&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="260" x="890" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="PEX5b0sY8_cTW1xDCv5e-47" edge="1" parent="1" source="PEX5b0sY8_cTW1xDCv5e-6" style="endArrow=block;dashed=1;endFill=0;endSize=12;html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;curved=0;exitX=0.567;exitY=0;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="PEX5b0sY8_cTW1xDCv5e-5" value="">
+          <mxGeometry relative="1" width="160" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="320" />
+              <mxPoint x="414" y="320" />
+            </Array>
+            <mxPoint x="356" y="350" as="sourcePoint" />
+            <mxPoint x="360" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

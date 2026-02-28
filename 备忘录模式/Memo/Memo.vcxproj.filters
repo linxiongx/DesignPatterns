@@ -35,4 +35,9 @@
       <Filter>资源文件</Filter>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\C++ 备忘录模式详解.md">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
 </Project>

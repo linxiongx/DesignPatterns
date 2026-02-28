@@ -6,23 +6,23 @@
 class History
 {
 public:
-	void push(EditorMemento* pEditorMemento)
+	void push(std::shared_ptr<EditorMemento> spEditorMemento)
 	{
-		m_lstEditorMemento.push_back(pEditorMemento);
+		m_lstEditorMemento.push_back(spEditorMemento);
 	}
 
-	EditorMemento* pop()
+	std::shared_ptr<EditorMemento> pop()
 	{
-		EditorMemento* ptr = nullptr;
+		std::shared_ptr<EditorMemento> sp = nullptr;
 		if (m_lstEditorMemento.size() > 0)
 		{
-			ptr = m_lstEditorMemento.back();
+			sp = m_lstEditorMemento.back();
 			m_lstEditorMemento.pop_back();
 		}
 
-		return ptr;
+		return sp;
 	}
 
 private:
-	std::list<EditorMemento*> m_lstEditorMemento;
+	std::list<std::shared_ptr<EditorMemento>> m_lstEditorMemento;
 };

@@ -137,6 +137,9 @@
   <ItemGroup>
     <Image Include="备忘录模式UML图.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\C++ 备忘录模式详解.md" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
